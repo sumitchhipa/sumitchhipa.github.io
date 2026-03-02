@@ -1,144 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sumit Chhipa | Data Scientist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
-      color: #333;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumit Chhipa | Data Scientist</title>
 
-    header {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 60px 20px;
-    }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+}
 
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-      opacity: 0.9;
-    }
+nav {
+    position: fixed;
+    width: 100%;
+    background: #0f172a;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    z-index: 1000;
+}
 
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+nav a {
+    color: #38bdf8;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-    h2 {
-      margin-bottom: 20px;
-      color: #2c5364;
-    }
+section {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: left;
-    }
+.hero {
+    text-align: center;
+    padding-top: 150px;
+}
 
-    .skills span {
-      display: inline-block;
-      background: #2c5364;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 20px;
-      margin: 5px;
-      font-size: 14px;
-    }
+.hero h1 {
+    font-size: 42px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      margin: 10px;
-      background: #2c5364;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: 0.3s;
-    }
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #94a3b8;
+}
 
-    .btn:hover {
-      background: #1b3a4b;
-    }
+.btn {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-    footer {
-      background: #111;
-      color: white;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+.btn:hover {
+    background: #0ea5e9;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 6px 15px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+    color: #94a3b8;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Hi, I'm Sumit 👋</h1>
-  <p>Data Science & Machine Learning Engineer</p>
-  <a href="https://github.com/sumitchhipa" class="btn">GitHub</a>
-  <a href="https://linkedin.com/in/YOUR-LINK" class="btn">LinkedIn</a>
-</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<section>
-  <h2>About Me</h2>
-  <div class="card">
-    I am a passionate Data Science enthusiast with hands-on experience in
-    building end-to-end Machine Learning models. I specialize in data
-    preprocessing, feature engineering, and predictive modeling using Python.
-  </div>
+<section id="home" class="hero">
+<h1>Hi, I'm Sumit 👋</h1>
+<p>Data Scientist | Machine Learning Engineer | GenAI Developer</p>
+<a href="https://github.com/sumitchhipa" class="btn">GitHub</a>
+<a href="https://www.linkedin.com/in/sumitchhipa/" class="btn">LinkedIn</a>
 </section>
 
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Python</span>
-    <span>Pandas</span>
-    <span>NumPy</span>
-    <span>Scikit-Learn</span>
-    <span>TensorFlow</span>
-    <span>Deep Learning</span>
-    <span>Machine Learning</span>
-    <span>GenAI</span>
-  </div>
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+I am a passionate Data Science enthusiast with hands-on experience in 
+Machine Learning, Deep Learning, and Generative AI. I have built end-to-end 
+ML systems, deployed AI chatbots, and worked on real-world predictive models. 
+My focus is on writing clean code, building scalable systems, and solving real problems using data.
+</div>
 </section>
 
-<section>
-  <h2>Projects</h2>
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills">
+<span>Python</span>
+<span>Pandas</span>
+<span>NumPy</span>
+<span>Scikit-Learn</span>
+<span>TensorFlow</span>
+<span>Deep Learning</span>
+<span>Machine Learning</span>
+<span>FastAPI</span>
+<span>Streamlit</span>
+<span>Docker</span>
+<span>Git & GitHub</span>
+<span>GenAI / LLM</span>
+</div>
+</section>
 
-  <div class="card">
-    <h3>Customer Churn Prediction</h3>
-    Built a classification model achieving 89% accuracy using Random Forest.
-    Implemented full ML pipeline including preprocessing and evaluation.
-  </div>
+<section id="projects">
+<h2>Projects</h2>
 
-  <div class="card">
-    <h3>Image Classification CNN</h3>
-    Developed a deep learning model using CNN architecture for image
-    classification with high performance.
-  </div>
+<div class="card">
+<h3>AI Chatbot 2.0</h3>
+<p>Advanced AI chatbot with memory, API integration, and deployment support.</p>
+<a href="https://github.com/sumitchhipa/chatbot_2.0" class="btn">View Project</a>
+</div>
 
-  <div class="card">
-    <h3>GenAI Chatbot</h3>
-    Built an AI chatbot using LLM APIs with memory and deployment integration.
-  </div>
+<div class="card">
+<h3>AI Chatbot 1.0</h3>
+<p>Initial version of conversational AI chatbot built using Python and APIs.</p>
+<a href="https://github.com/sumitchhipa/chatbot-1.0" class="btn">View Project</a>
+</div>
 
+<div class="card">
+<h3>FitPro Web App</h3>
+<p>Fitness tracking web application designed for health monitoring and user engagement.</p>
+<a href="https://github.com/sumitchhipa/fitPro" class="btn">View Project</a>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: your_email_here</p>
+<p>LinkedIn: linkedin.com/in/sumitchhipa</p>
+<p>GitHub: github.com/sumitchhipa</p>
+</div>
 </section>
 
 <footer>
-  © 2026 Sumit Chhipa | Data Science Portfolio |
+© 2026 Sumit Chhipa | Portfolio Website
 </footer>
 
 </body>
