@@ -8,18 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
-color:#fff;
-scroll-behavior:smooth;
+background:#f8fafc;
+color:#1e293b;
 }
 
 /* NAVBAR */
@@ -30,13 +29,14 @@ width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
-background:rgba(15,23,42,0.95);
+padding:18px 8%;
+background:#ffffff;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 z-index:1000;
 }
 
 nav h2{
-color:#38bdf8;
+color:#2563eb;
 font-weight:700;
 }
 
@@ -51,22 +51,23 @@ margin-left:30px;
 
 nav ul li a{
 text-decoration:none;
-color:#fff;
+color:#1e293b;
 font-weight:500;
 transition:0.3s;
 }
 
 nav ul li a:hover{
-color:#38bdf8;
+color:#2563eb;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero{
 min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:120px 8% 0 8%;
+padding:140px 8% 80px 8%;
+background:#f1f5f9;
 }
 
 .hero-left{
@@ -74,23 +75,19 @@ max-width:600px;
 }
 
 .hero-left h1{
-font-size:52px;
+font-size:50px;
 font-weight:700;
 line-height:1.2;
 }
 
 .hero-left span{
-color:#38bdf8;
+color:#2563eb;
 }
 
 .hero-left p{
 margin:20px 0;
 font-size:18px;
-color:#cbd5e1;
-}
-
-.hero-buttons{
-margin-top:15px;
+color:#475569;
 }
 
 .hero-buttons a{
@@ -105,56 +102,73 @@ transition:0.3s;
 
 /* BUTTONS */
 .btn-primary{
-background:#38bdf8;
-color:#0f172a;
+background:#2563eb;
+color:#fff;
 }
 
 .btn-primary:hover{
-background:#0ea5e9;
+background:#1d4ed8;
 transform:translateY(-3px);
 }
 
 .btn-outline{
-border:2px solid #38bdf8;
-color:#38bdf8;
+border:2px solid #2563eb;
+color:#2563eb;
 }
 
 .btn-outline:hover{
-background:#38bdf8;
-color:#0f172a;
+background:#2563eb;
+color:#fff;
 }
 
-/* HERO IMAGE */
+/* PROFILE IMAGE */
 .hero-right img{
-width:420px;
-border-radius:20px;
-box-shadow:0 20px 40px rgba(0,0,0,0.5);
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* SECTIONS */
 section{
 padding:100px 8%;
+scroll-margin-top:120px; /* FIX TAB CUT ISSUE */
 }
 
 h2{
 font-size:36px;
 margin-bottom:30px;
-color:#38bdf8;
+color:#2563eb;
 }
 
+/* CARD */
 .card{
-background:#1e293b;
-padding:25px;
+background:#ffffff;
+padding:30px;
 border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
 margin-bottom:30px;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-5px);
 }
 
-/* PROJECT BUTTON WRAPPER */
+/* SKILLS */
+.skills span{
+display:inline-block;
+background:#2563eb;
+color:#fff;
+padding:8px 18px;
+margin:6px;
+border-radius:25px;
+font-size:14px;
+font-weight:500;
+}
+
+/* PROJECT BUTTONS */
 .project-buttons{
 margin-top:15px;
 }
@@ -166,27 +180,14 @@ padding:10px 22px;
 border-radius:25px;
 text-decoration:none;
 font-weight:600;
-transition:0.3s;
-}
-
-/* SKILLS */
-.skills span{
-display:inline-block;
-background:#38bdf8;
-color:#0f172a;
-padding:8px 18px;
-margin:6px;
-border-radius:20px;
-font-size:14px;
-font-weight:600;
 }
 
 /* FOOTER */
 footer{
 text-align:center;
 padding:30px;
-background:#020617;
-color:#94a3b8;
+background:#e2e8f0;
+color:#475569;
 }
 
 /* RESPONSIVE */
@@ -195,12 +196,15 @@ color:#94a3b8;
 .hero{
 flex-direction:column;
 text-align:center;
-padding-top:150px;
+}
+
+.hero-right{
+margin-top:40px;
 }
 
 .hero-right img{
-width:280px;
-margin-top:40px;
+width:220px;
+height:220px;
 }
 
 nav{
@@ -212,7 +216,6 @@ margin-top:10px;
 }
 
 }
-
 </style>
 </head>
 
@@ -240,7 +243,6 @@ margin-top:10px;
 <a href="https://www.linkedin.com/in/sumitchhipa/" class="btn-outline">LinkedIn</a>
 <a href="Sumit_Chhipa_Data_Science_ML_Resume.pdf" class="btn-outline" target="_blank">Download Resume</a>
 </div>
-
 </div>
 
 <div class="hero-right">
