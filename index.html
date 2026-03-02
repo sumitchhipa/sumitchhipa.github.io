@@ -14,7 +14,7 @@
 }
 
 body {
-    background: #0f172a;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: #e2e8f0;
     scroll-behavior: smooth;
 }
@@ -22,10 +22,10 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background: #0f172a;
+    background: rgba(15,23,42,0.95);
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
@@ -34,6 +34,10 @@ nav a {
     margin: 0 20px;
     text-decoration: none;
     font-weight: 500;
+}
+
+nav a:hover {
+    color: #0ea5e9;
 }
 
 section {
@@ -48,7 +52,11 @@ section {
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 48px;
+}
+
+.hero span {
+    color: #38bdf8;
 }
 
 .hero p {
@@ -60,7 +68,7 @@ section {
 .btn {
     display: inline-block;
     margin: 15px 10px;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border-radius: 25px;
     text-decoration: none;
     background: #38bdf8;
@@ -71,23 +79,35 @@ section {
 
 .btn:hover {
     background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #0f172a;
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #38bdf8;
 }
 
 .card {
     background: #1e293b;
-    padding: 20px;
+    padding: 25px;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .skills span {
@@ -120,19 +140,20 @@ footer {
 </nav>
 
 <section id="home" class="hero">
-<h1>Hi, I'm Sumit 👋</h1>
-<p>Data Scientist | Machine Learning Engineer | GenAI Developer</p>
+<h1>Hi, I'm <span>Sumit Chhipa</span> 👋</h1>
+<p>Data Scientist | Machine Learning Engineer | Generative AI Developer</p>
+
 <a href="https://github.com/sumitchhipa" class="btn">GitHub</a>
 <a href="https://www.linkedin.com/in/sumitchhipa/" class="btn">LinkedIn</a>
+<a href="#" class="btn btn-outline">Download Resume</a>
 </section>
 
 <section id="about">
 <h2>About Me</h2>
 <div class="card">
 I am a passionate Data Science enthusiast with hands-on experience in 
-Machine Learning, Deep Learning, and Generative AI. I have built end-to-end 
-ML systems, deployed AI chatbots, and worked on real-world predictive models. 
-My focus is on writing clean code, building scalable systems, and solving real problems using data.
+Machine Learning, Deep Learning, and Generative AI. I build end-to-end ML systems, 
+deploy AI chatbots on cloud platforms, and solve real-world business problems using data-driven approaches.
 </div>
 </section>
 
@@ -150,7 +171,9 @@ My focus is on writing clean code, building scalable systems, and solving real p
 <span>Streamlit</span>
 <span>Docker</span>
 <span>Git & GitHub</span>
-<span>GenAI / LLM</span>
+<span>LLMs / GenAI</span>
+<span>API Integration</span>
+<span>Model Deployment</span>
 </div>
 </section>
 
@@ -158,21 +181,22 @@ My focus is on writing clean code, building scalable systems, and solving real p
 <h2>Projects</h2>
 
 <div class="card">
-<h3>AI Chatbot 2.0</h3>
-<p>Advanced AI chatbot with memory, API integration, and deployment support.</p>
-<a href="https://github.com/sumitchhipa/chatbot_2.0" class="btn">View Project</a>
+<h3>AI Chatbot 2.0 (Live)</h3>
+<p>Advanced AI chatbot with memory, Groq API integration, and cloud deployment using Streamlit.</p>
+<a href="https://chatbot20-cbnjylmf3qwrqkwcs2e2eg.streamlit.app" class="btn">Live Demo</a>
+<a href="https://github.com/sumitchhipa/chatbot_2.0" class="btn btn-outline">GitHub</a>
 </div>
 
 <div class="card">
 <h3>AI Chatbot 1.0</h3>
-<p>Initial version of conversational AI chatbot built using Python and APIs.</p>
-<a href="https://github.com/sumitchhipa/chatbot-1.0" class="btn">View Project</a>
+<p>Conversational AI chatbot built using Python and API-based architecture.</p>
+<a href="https://github.com/sumitchhipa/chatbot-1.0" class="btn btn-outline">GitHub</a>
 </div>
 
 <div class="card">
 <h3>FitPro Web App</h3>
-<p>Fitness tracking web application designed for health monitoring and user engagement.</p>
-<a href="https://github.com/sumitchhipa/fitPro" class="btn">View Project</a>
+<p>Fitness tracking web application for health monitoring and user engagement.</p>
+<a href="https://github.com/sumitchhipa/fitPro" class="btn btn-outline">GitHub</a>
 </div>
 
 </section>
@@ -180,14 +204,14 @@ My focus is on writing clean code, building scalable systems, and solving real p
 <section id="contact">
 <h2>Contact</h2>
 <div class="card">
-<p>Email: Sumitchhipa001@gmail.com</p>
+<p>Email: sumitchhipa001@gmail.com</p>
 <p>LinkedIn: linkedin.com/in/sumitchhipa</p>
 <p>GitHub: github.com/sumitchhipa</p>
 </div>
 </section>
 
 <footer>
-© 2026 Sumit Chhipa | Portfolio Website
+© 2026 Sumit Chhipa | Data Science Portfolio
 </footer>
 
 </body>
